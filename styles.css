@@ -1,0 +1,268 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.hero-section {
+    background: url('p.jpg') no-repeat center center;
+    background-size: cover;
+    color: rgb(255, 255, 254);
+    padding: 100px 0;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    text-align: center;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Navbar */
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar1 .navbar-logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.navbar1 .navbar1-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar1 .navbar1-nav a {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.navbar1 .navbar1-nav a:hover {
+    color: #000000;
+    transition: 0.6s;
+    background-color: #ffbe31;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar1 .navbar1-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar1 .navbar1-nav a {
+        margin: 10px 0;
+    }
+
+    .navbar1 .navbar1-nav.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+.harga {
+    background-color: #ffbe31;
+}
+
+.hero-section p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.features-section .col-md-4 {
+    margin-bottom: 30px;
+}
+
+.pricing-section .card {
+    margin-bottom: 30px;
+}
+
+.contact-section form .form-control {
+    margin-bottom: 15px;
+}
+
+.section-divider {
+    border: none;
+    height: 2px;
+    background-color: #ffbe31;
+    margin: 50px 0;
+}
+
+/* carousel */
+.carousel-caption {
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: left;
+    max-width: 100%;
+}
+
+.carousel-caption h2 {
+    color: #000000b7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.carousel-caption h4 {
+    color: #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.carousel-caption p {
+    color: #000;
+}
+
+.carousel-caption .highlight {
+    color: #00f;
+    background-color: #ff0;
+    padding: 0 0.2rem;
+}
+
+
+
+.carousel-caption .btn-primary {
+    background-color: #0077b6;
+    color: #fff;
+}
+
+.carousel-caption .btn-primary:hover {
+    background-color: #005f99;
+    color: black;
+}
+
+
+/* Membership Modal Styles */
+.membership-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.membership-modal-content {
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+}
+
+.harga {
+    background-color: rgb(255, 255, 255);
+    color: #ffffff;
+}
+
+.membership-modal-header {
+    padding: 10px;
+    text-align: center;
+}
+
+.membership-modal-body {
+    padding: 20px;
+}
+
+.membership-modal-footer {
+    padding: 10px;
+    text-align: center;
+}
+
+.membership-modal-close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.membership-modal-close:hover {
+    color: #000;
+}
+
+/* Contact Me */
+.contact-me-section {
+    background-color: rgb(210, 210, 210);
+    padding: 10px 0;
+}
+
+.contact-me-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    display: block;
+    width: 102%;
+    padding: 1em;
+    background: green;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: green;
+}
+
+/* footer */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
